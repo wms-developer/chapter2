@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="spring@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="spring">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bpintl_hk"/>
+    <schema id="4" parent="1" name="dbgirl"/>
+    <schema id="5" parent="1" name="db_blog"/>
+    <schema id="6" parent="1" name="demo"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="my_acitiviti"/>
+    <schema id="10" parent="1" name="osaos_test"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="ssh"/>
+    <schema id="13" parent="1" name="sys"/>
+    <schema id="14" parent="1" name="test"/>
+    <schema id="15" parent="1" name="tree"/>
+    <table id="16" parent="2" name="t_login_log"/>
+    <table id="17" parent="2" name="t_user"/>
+    <column id="18" parent="16" name="login_log_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="16" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="20" parent="16" name="ip">
+      <Position>3</Position>
+      <DataType>varchar(23)|0</DataType>
+    </column>
+    <column id="21" parent="16" name="login_datetime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="22" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>login_log_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="17" name="user_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="17" name="user_name">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="25" parent="17" name="user_pass">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="26" parent="17" name="credits">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="27" parent="17" name="last_visit">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="28" parent="17" name="last_ip">
+      <Position>6</Position>
+      <DataType>varchar(23)|0</DataType>
+    </column>
+    <key id="29" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
