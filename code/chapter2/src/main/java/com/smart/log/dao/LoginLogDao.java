@@ -11,6 +11,7 @@ public class LoginLogDao {
     private final String INSERT_SQL="INSERT INTO spring.t_login_log (t_login_log.user_id, t_login_log.ip, t_login_log.login_datetime) values (?,?,?)";
 
     private JdbcTemplate jdbcTemplate;
+
     @Autowired
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;

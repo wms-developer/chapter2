@@ -17,6 +17,7 @@ public class UserDao {
 
     private final static String UPDATE_LOGIN_INFO=" UPDATE t_user set last_visit=?,last_ip=?,credits=? WHERE user_id=? ";
 
+
     @Autowired
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;

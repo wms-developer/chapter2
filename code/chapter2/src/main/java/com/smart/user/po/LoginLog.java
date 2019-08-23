@@ -29,6 +29,7 @@ public class LoginLog implements Serializable {
         return ip;
     }
 
+
     public void setIp(String ip) {
         this.ip = ip;
     }
