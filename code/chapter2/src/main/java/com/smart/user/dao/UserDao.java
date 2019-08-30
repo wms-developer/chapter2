@@ -28,7 +28,7 @@ public class UserDao {
         return jdbcTemplate.queryForObject(sqlStr,new Object[]{userName,password},Integer.class);
     }
 
-    public User findUseyByUserByName(final String userName){
+    public User findUserByUserByName(final String userName){
         final User user = new User();
         jdbcTemplate.query(QUERY_SQL, new Object[]{userName}, new RowCallbackHandler() {
             public void processRow(ResultSet resultSet) throws SQLException {
